@@ -1,7 +1,7 @@
 import type { InferSelectModel } from "drizzle-orm";
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
-import { characters, dailyQuestLogs, users } from "@/drizzle/schema";
+import { characters, dailyQuestLogs, users } from "@/db/schema";
 
 // --- 1. Pure Types (for internal backend logic) ---
 export type User = InferSelectModel<typeof users>;
